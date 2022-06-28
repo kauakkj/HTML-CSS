@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com imagens</title>
+</head>
+
+<body>
+    <h1>Trabalhando com imagens de diversos tamanhos.</h1>
+    <p>Aqui á baixo você ira notar a necessidade de mudanças de resolução da imagem.</p>
+    <picture>
+    <source media="(max-width:300px )" srcset="imagens/imagem-1.png" type="image/png">
+    <source media="(max-width: 700px)" srcset="imagens/imagem-2.png" type="image/png">
+    <img src="imagens/imagem-3.png" alt="imagem-tamanho-grande" title="Imagem grande">
+    </picture>
+    <h1>Trabalhando com áudios</h1>
+    <p>Agora irei trabalahar com audios e a forma que cada um reage no site.</p>
+    <audio src="midia/y2meta.com - Youngboy Never Broke Again- All in (official music video) (320 kbps).mp3" controls ></audio>
+    <!-- FORMATOS QUE SÃO SUPORTADO MP3 WAV OGG-->
+    <!-- Caso o meu navegador não suportar tais extensões de áudio eu devo usar os seguintes párametros -->
+    <audio src="midia/y2meta.com - Youngboy Never Broke Again- All in (official music video) (320 kbps).mp3" type="audio/mpeg">
+    </audio>
+    <audio src="midia/y2meta.com - Youngboy Never Broke Again- All in (official music video) (320 kbps).mp3" type="audio/wav">
+    </audio>
+    <audio src="midia/y2meta.com - Youngboy Never Broke Again- All in (official music video) (320 kbps).mp3" type="audio/ogg"></audio>
+    <p>Caso seu navegador não consiga suportar audios você consegue baixar o áudio clicando <a href="midia/y2meta.com - Youngboy Never Broke Again- All in (official music video) (320 kbps).mp3" title="Baixe o audio aqui">aqui</a></p>
+</body>
+
+</html>

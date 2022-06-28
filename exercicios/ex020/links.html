@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- 
+        #    = Id
+        .    = Class
+        :    =Pseudo-class
+        ::   = Pseudo-element
+        >    = Children
+
+     -->
+    <style>
+        body{
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial::before{
+            content: →;
+        }
+        .especial::after{
+            content: ←;
+        }
+        button{
+            color: red;
+            
+        }
+    </style>
+    <title>Links</title>
+</head>
+<body>
+        <h1>Links</h1>
+        <p class="especial"><a target="_blank" class="especial" href="https://www.instagram.com/kkjkaua_/">Meu Instagram</a></p>
+        <p class="especial"><a target="_blank" href="https://www.youtube.com/channel/UCiyXLSoQL5ZjmZewSQ1L_XA">Meu Canal do Youtube</a></p>
+        <button >Hello Bra</button>
+        
+</body>
+</html>

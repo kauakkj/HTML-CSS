@@ -1,0 +1,18 @@
+.corpo{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 125%;
+    background: url(bg/photo-1569982175971-d92b01cf8694.jpg);
+    position: relative;
+    background-size: 100%;
+    width: 100%;
+    margin-top: 25px;
+    color: white;
+}
+.list{
+    margin: auto 35%;
+}
+.cartoon{
+    margin: auto;
+    line-height: 25px;
+}
