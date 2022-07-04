@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+</head>
+<style>
+    #container{
+        background-image: url('imagens/target001.png');
+        background-size: 100% 100%;
+        background-color: purple;
+        height: 96vh;
+        padding: 10px;
+        /* OBS SEMPRE COLOCAR UMA CONTAINER COM O POSICIONAMENTO RELATIVE */
+        position: relative;
+    }
+    #conteudo{
+        /* OBS SEMPRE COLOCAR UM CONTEUDO COM O POSICIONAMENTO ABSOLUTE */
+        background-color: yellow;
+        height: 200px;
+        width: 400px;
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        /* VALORES NEGATIVO É A FORMA CORRETA, VALORES POSITIVOS VÃO PARA OUTRA DIREÇÃO.  */
+        transform: translate(-50% , -50%);
+        background-image: url('imagens/target001.png');
+        background-size: 100% 100%;
+        
+    }
+</style>
+<body>
+    <section id="container">
+        <article id="conteudo"></article>
+        
+    </section>
+</body>
+</html>
