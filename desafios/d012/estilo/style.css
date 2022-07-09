@@ -90,4 +90,16 @@ section{
     font-size: 3.5vw;
 }
 
-
+/* TRABALHANDO BACKGROUNDS */
+section.imagem{
+    background-image: url('../imagens/background001.jpg');
+    background-size: cover;
+    background-position: left center;
+    background-attachment: fixed;
+}
+section.imagem#imagem-2{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+    background-position: left center;
+    background-attachment: fixed;
+}
