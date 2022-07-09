@@ -1,12 +1,25 @@
 @charset "UTF-8";
 
+/* IMPORTAÇÕES DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --font-destaque: 'Oswald', sans-serif;
+    --fonte-conteudo:'Edu TAS Beginner', cursive;
+    --fonte-padrao:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 html, body{
     min-height: 100vh;
     background: darkgray;
+    font-family: var(--fonte-padrao);
 }
 
 /* CONFIGS GLOBAIS A CIMA. */
@@ -18,13 +31,17 @@ header{
     background-color: black;
     text-align: center;
     color: white;
+    font-family: var(--font-destaque);
+    
 }
 header h1{
     font-variant: small-caps;
     padding-top: 50px;
+    font-size: 6vw;
 }
 header p{
     padding-bottom: 50px;
+    font-weight: normal;
 }
 
 /* Tags <a> no projeto ou seja os links */
@@ -60,13 +77,17 @@ section.imagem{
 }
 section.imagem > P{
     background-color: rgba(0, 0, 0, 0.426) ;
-    width: 400px;
+    display: inline-block;
+    padding: 10px;
 }
 section{
     padding-top: 10vh;
     padding-bottom: 10vh ;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte-conteudo);
+    font-weight: bolder;
+    font-size: 3.5vw;
 }
 
 
