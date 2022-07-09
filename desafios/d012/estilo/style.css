@@ -25,6 +25,7 @@ html, body{
 /* CONFIGS GLOBAIS A CIMA. */
 
 
+
 /* HEADER */
 
 header{
@@ -76,9 +77,10 @@ section.imagem{
     color: white;
 }
 section.imagem > P{
-    background-color: rgba(0, 0, 0, 0.426) ;
+    background-color: rgba(0, 0, 0, 0.526) ;
     display: inline-block;
     padding: 10px;
+    text-shadow: 2px 1px 0px black;
 }
 section{
     padding-top: 10vh;
@@ -87,19 +89,23 @@ section{
     padding-left: 30px;
     font-family: var(--fonte-conteudo);
     font-weight: bolder;
-    font-size: 3.5vw;
+    font-size: 3.2vw;
+}
+section > p{
+    padding-bottom: 2em;
 }
 
 /* TRABALHANDO BACKGROUNDS */
 section.imagem{
     background-image: url('../imagens/background001.jpg');
-    background-size: cover;
-    background-position: left center;
+    background-position: right center;
     background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 6px  6px  13px  0px rgba(0, 0, 0, 0.578);
 }
 section.imagem#imagem-2{
     background-image: url('../imagens/background002.jpg');
-    background-size: cover;
     background-position: left center;
-    background-attachment: fixed;
 }
+
+/* DESAFIO TERMINADO. */
