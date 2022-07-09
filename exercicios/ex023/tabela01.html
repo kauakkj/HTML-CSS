@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: gray;
+            color: white;
+        }
+        td{
+            border: 2px solid black;
+            padding: 10px;
+                   
+         }
+        table{
+            border: 10px solid cornflowerblue;
+            width: 400px;
+            border-collapse: collapse;
+            margin: auto;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.516);
+        }
+        tr#second{
+            background-color: blue;
+        }
+        td#random{
+            background-color: red;
+        }
+
+    </style>
+    <title>Tabelas</title>
+</head>
+
+<body>
+    <!-- 
+        Hierarquia: 
+            Table: Tabela
+                Table Header: cabeçalho da tabela
+                    Table Data: Informações da tabela
+     -->
+    <h1>Minha Primeira tabela</h1>
+    <table>
+        <!-- Primeira linha da minha tabela -->
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <!-- Segunda linha da minha tabela -->
+        <tr id="second">
+            <td>
+                A2
+            </td>
+            <td>
+                B2
+            </td>
+            <td id="random">
+                C2
+            </td>
+        </tr>
+        <!-- Terceira linha da minha tabela -->
+        <tr>
+            <td>
+                A3
+            </td>
+            <td>
+                B3
+            </td>
+            <td>
+                C3
+            </td>
+        </tr>
+        <!-- Quarta linha da minha tabela -->
+        <tr>
+            <td>
+                A4
+            </td>
+            <td>
+                B4
+            </td>
+            <td>
+                C4
+            </td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
