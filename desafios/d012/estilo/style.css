@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    min-height: 100vh;
+    background: darkgray;
+}
+
+/* CONFIGS GLOBAIS A CIMA. */
+
+
+/* HEADER */
+
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+header h1{
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+header p{
+    padding-bottom: 50px;
+}
+
+/* Tags <a> no projeto ou seja os links */
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+/* FOOTER */
+
+footer{
+    background: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* TRABALHANDO AS SECTIONS */
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background: rgba(51, 51, 51);
+    color: white;
+}
+section.imagem > P{
+    background-color: rgba(0, 0, 0, 0.426) ;
+    width: 400px;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh ;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+
