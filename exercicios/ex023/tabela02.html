@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 2</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            margin-top: 10px;
+        }
+        table{
+            border-radius: 10px;
+            border-collapse: collapse;
+            width: 400px;
+            box-shadow: 0px 0px 5px black;
+            
+        }
+        thead{
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+            border: 2px solid black;
+            text-align: center;
+            
+        }
+        td, tr{
+            border: 2px solid black;
+            padding: 20px;
+        }
+        td.num{
+            text-align: right;
+        }
+        tfoot{
+            font-weight: bolder;
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+    </style>
+    <!-- 
+        ANATOMOIA PARA TABELAS GRANDES TABLE
+            THEAD
+            TBODY
+            TFOOT
+
+            TODOS CITADOS Á CIMA PODE CONTEM OS TAIS ELEMENTOS COMO:
+            TR, TD, TH.
+     -->
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    Estado
+                </td>
+                <td>
+                    População
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    São Paulo
+                </td>
+                <td class="num">
+                    46 649 132
+                </td>
+            </tr>
+                <tr>
+                    <td>
+                        Minas Gerais
+                    </td>
+                    <td class="num">
+                        21 411 923
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Rio de Janeiro
+                    </td>
+                    <td  class="num">
+                        17 463 349
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Bahia
+                    </td>
+                    <td class="num">
+                        14 985 284
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Paraná
+                    </td>
+                    <td class="num">
+                        11 597 484
+                    </td>
+                </tr>
+                <td>
+                    Rio Grande do Sul
+                </td>
+                <td class="num">
+                    11 466 630	
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Pernambuco
+                </td>
+                <td class="num">
+                    9 674 793	
+                </td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 240 580</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 777 124</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 338 473</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td class="num">1 238 123</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
