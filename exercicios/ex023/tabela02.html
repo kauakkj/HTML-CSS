@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela 2</title>
     <style>
-        *{
+        * {
             font-family: Arial, Helvetica, sans-serif;
             margin: auto;
             margin-top: 10px;
         }
-        table{
+
+        table {
             border-radius: 10px;
             border-collapse: collapse;
             width: 400px;
             box-shadow: 0px 0px 5px black;
+            position: relative;
 
         }
-        thead{
+
+        caption {
+            font-size: 1.5em;
+        }
+
+        thead {
             background-color: gray;
             color: white;
             font-weight: bolder;
             border: 2px solid black;
             text-align: center;
+        }
 
+        thead>tr>th {
+            position: sticky;
+            top: -1px;
+            background-color: lightgray;
         }
-        td, tr{
+
+        td {
+            width: 60px;
+        }
+
+        /* ODD> Par */
+        /* EVEN> Impar */
+        tbody>tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td,
+        tr {
             border: 2px solid black;
-            padding: 20px;
+            padding: 10px;
         }
-        td.num{
+
+        td.num {
             text-align: right;
         }
-        tfoot{
+
+        caption {
+            padding: 10px;
+            font-size: 1.5em;
+            background-color: lightgray;
+            font-weight: bold;
+            border-top-left-radius: 10px;
+        }
+
+        tfoot {
             font-weight: bolder;
             background-color: gray;
             color: white;
@@ -51,17 +86,18 @@
      -->
 
 </head>
+
 <body>
     <table>
-      <caption>População das unidades federativas</caption>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <td>
+                <th scope="col">
                     Estado
-                </td>
-                <td>
+                </th>
+                <th style="width: 50px;" scope="col">
                     População
-                </td>
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -73,46 +109,46 @@
                     46 649 132
                 </td>
             </tr>
-                <tr>
-                    <td>
-                        Minas Gerais
-                    </td>
-                    <td class="num">
-                        21 411 923
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Rio de Janeiro
-                    </td>
-                    <td  class="num">
-                        17 463 349
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        Bahia
-                    </td>
-                    <td class="num">
-                        14 985 284
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        Paraná
-                    </td>
-                    <td class="num">
-                        11 597 484
-                    </td>
-                </tr>
+            <tr>
                 <td>
-                    Rio Grande do Sul
+                    Minas Gerais
                 </td>
                 <td class="num">
-                    11 466 630
+                    21 411 923
                 </td>
+            </tr>
+            <tr>
+                <td>
+                    Rio de Janeiro
+                </td>
+                <td class="num">
+                    17 463 349
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Bahia
+                </td>
+                <td class="num">
+                    14 985 284
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Paraná
+                </td>
+                <td class="num">
+                    11 597 484
+                </td>
+            </tr>
+            <td>
+                Rio Grande do Sul
+            </td>
+            <td class="num">
+                11 466 630
+            </td>
             </tr>
             <tr>
                 <td>
@@ -137,10 +173,44 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total:</td>
-                <td class="num">1 238 123</td>
+                <th scope="row">Total:</th>
+                <th scope="row" class="num">1 238 123</th>
             </tr>
         </tfoot>
     </table>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorem distinctio excepturi dignissimos vel quod
+        et quia, officiis mollitia quidem beatae, voluptatem tempore sit! Nobis deserunt perspiciatis hic nisi maxime.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eaque ullam enim? Numquam, debitis at. Hic
+        repudiandae dolores saepe rem iste nesciunt ab dolor sapiente, impedit consequatur corrupti veritatis modi?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid saepe asperiores, aspernatur architecto
+        adipisci eligendi consequuntur nihil. Officiis veniam sunt illum fuga laboriosam, commodi amet praesentium vel
+        magni dicta ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum minima accusamus
+        fugiat eius! Reiciendis exercitationem fugit voluptates itaque eveniet voluptatibus quis architecto rem commodi
+        autem non, dolore aperiam optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste in fugit quidem
+        facere, eveniet soluta ut corporis autem quia deserunt praesentium porro et sit commodi error temporibus aliquam
+        quis pariatur.</p>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dolores saepe rem natus voluptates magnam animi,
+        quia asperiores, ipsum, in accusamus voluptate exercitationem esse praesentium vero! Aperiam quasi minima eum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eaque delectus vitae dolor unde maiores neque
+        quas, molestiae ad odio esse quia illum saepe voluptatibus commodi recusandae fugit corporis nulla! Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quaerat numquam eum voluptas accusamus reprehenderit consequatur
+        officia doloremque error beatae dolores, maxime quos magnam eaque, expedita ad enim laudantium! Dolore, beatae.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequatur qui cupiditate! Ratione accusamus
+        quod error atque corporis eaque, quas repellat quos, adipisci nobis, incidunt impedit qui perferendis tempore
+        porro.</p>
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora error delectus accusamus nemo aspernatur quia
+        magnam, consequatur sit obcaecati labore! Ipsum et consectetur expedita voluptatem ratione nostrum in,
+        distinctio aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo voluptatum ab, modi
+        vel et dignissimos ut hic aut assumenda, non, totam ea officiis quisquam quae? Aspernatur officia sint at! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Incidunt modi velit excepturi numquam nisi debitis suscipit
+        ut non. Quae saepe architecto obcaecati explicabo impedit reprehenderit consequuntur repellendus, praesentium
+        libero totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, sint unde? Veniam similique
+        ipsum tempore, omnis ad illum! Recusandae suscipit magnam autem? Nisi voluptatem fugit sit perspiciatis,
+        repudiandae voluptatibus deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sapiente omnis
+        fugit voluptates unde illo laborum beatae! Ipsa iusto consectetur quod qui ut at vero velit exercitationem
+        quaerat, delectus consequatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic animi dolor
+        laudantium repudiandae accusantium, eum cum, sint veniam vitae ipsum qui rem incidunt magni, dolore deserunt
+        magnam sapiente? Error, commodi? </p>
 </body>
+
 </html>
