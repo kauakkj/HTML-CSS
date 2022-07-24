@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+
+        }
+
+        #inome {
+            border-radius: 10px;
+        }
+
+        #isobrenome {
+            border-radius: 10px;
+        }
+        #button{
+            width: 120px;
+            padding-left: 10px;
+            border-radius: 10px;
+        }
+        #button:hover{
+            box-shadow: 0px 0px 10px white;
+            transition: 1s ease-in-out;
+            transform: translate(2px, -2px);
+            cursor: pointer;
+        }
+    </style>
+    <title>Forumlario 1</title>
+</head>
+
+<body>
+    <h1>Meu Primeiro Forumlario</h1>
+    <!-- REMOVER AUTO-COMPLETE É SEMPRE NA TAG FORM -->
+
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome: </label><input type="text" name="nome" id="inome"></p>
+
+
+        <p><label for="isobrenome">Sobrenome: </label><input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p>
+            <input id="button" type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+
+</html>
